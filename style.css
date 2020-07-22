@@ -56,3 +56,64 @@
 .navbar_item a:hover {
   color: white;
 }
+
+/* Center contents */
+.card_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.card_img {
+  height: 0;
+  padding-bottom: 60%;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.card_desc {
+  flex: 1 1 auto;
+  background-color: white;
+  padding: 1em;
+}
+
+/* Left Side contents */
+/* Bullet List */
+.info_list {
+  margin-bottom: 2rem;
+}
+
+.info_list_item {
+  display: flex;
+  margin: 0.5em 0;
+}
+
+.info_list_item:before {
+  content: "⌘";
+  margin-right: 0.5em;
+}
+
+/* Message List */
+
+/* Responsive Set */
+@media (min-width : 600px) {
+  .card_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+  }
+
+  .card_item {
+    width: 50%;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width : 1200px) {
+  .card_item {
+    width: 33.33333%;
+    padding: 0 1rem;
+  }
+}
