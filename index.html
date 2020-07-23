@@ -8,17 +8,20 @@
   <title>FlexLayoutPractice</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="default.css" />
+  <script src="https://kit.fontawesome.com/5a302792a0.js" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
 </head>
 
 <body>
   <div class="page">
     <!-- Header -->
     <header class="header">
-      <h1>Flex Responsive Layout</h1>
+      <h1>Flex</h1>
       <form class="search-form">
         <input type="search" />
         <input type="submit" value="찾기" />
       </form>
+      <button class="modal_btn"><i class="far fa-envelope-open"></i></button>
     </header>
     <!-- Navbar -->
     <ul class="navbar">
@@ -150,15 +153,17 @@
         </li>
       </ul>
     </aside>
-    <div class="modal">
-      <div class="dialog">
-        Flex Layout 연습용 반응형 페이지입니다.
-      </div>
+  </div>
+  <div class="modal invisible">
+    <div class="dialog">
+      <button class="modal_close_btn">X</button>
+      Flex Layout 연습용 반응형 페이지입니다.
     </div>
-    <!-- Footer -->
-    <footer class="footer">
-      Write By. YoonChulJoong
-    </footer>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    Write By. YoonChulJoong
+  </footer>
   </div>
 </body>
 

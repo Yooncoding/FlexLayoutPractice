@@ -2,6 +2,9 @@
 .search-form {
   display: flex;
   height: 40px;
+  width: 240px;
+  max-width: 60%;
+  margin-left: auto;
 }
 
 .search-form input[type="search"] {
@@ -23,7 +26,6 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   margin: 1rem;
 }
 
@@ -58,6 +60,10 @@
 }
 
 /* Center contents */
+.center {
+  padding: 1rem;
+}
+
 .card_item {
   display: flex;
   flex-direction: column;
@@ -80,6 +86,14 @@
 }
 
 /* Left Side contents */
+.side {
+  padding: 1rem;
+}
+
+.left {
+  background-color: white;
+}
+
 /* Bullet List */
 .info_list {
   margin-bottom: 2rem;
@@ -110,7 +124,6 @@
 .right {
   color: white;
   background: #666;
-  padding: 1rem;
 }
 
 /* Message List */
@@ -136,6 +149,10 @@
 }
 
 /* Modal */
+.modal.invisible {
+  display: none;
+}
+
 .modal {
   display: flex;
   justify-content: center;
@@ -149,14 +166,28 @@
 }
 
 .dialog {
+  display: flex;
+  flex-direction: column;
   width: 50vh;
   padding: 2em;
+  padding-bottom: 2.5em;
   border-radius: 1em;
   background: white;
 }
 
+.modal_btn {
+  margin-left: 0.3em;
+  font-size: 1.5rem;
+}
+
+.modal_close_btn {
+  color: #333;
+  margin-left: auto;
+  font-size: 0.7rem;
+}
+
 .footer {
-  background-color: lightgray;
+  background-color: #eeeeee;
   text-align: center;
   padding: 1em;
   border-top: 1px solid lightgray;
@@ -173,6 +204,36 @@
   .card_item {
     width: 50%;
     padding: 0 1rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .left {
+    width: 20%;
+    order: 1;
+  }
+
+  .center {
+    width: 60%;
+    order: 2;
+  }
+
+  .right {
+    width: 20%;
+    order: 3;
   }
 }
 
